@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'century_gothic_bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('century_gothic_bold'), url('8483.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'century_gothic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('century_gothic_bold'), url('11528.ttf') format('opentype');
+}

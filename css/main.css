@@ -1,0 +1,479 @@
+@import "../libs/fontawesome/css/fontawesome-all.css";
+.icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.3s opacity;
+}
+.icon.main-icon {
+  width: 100px;
+  height: 100px;
+}
+.icon.main-icon.icon-burenie {
+  background-image: url("../img/icons/burenie.png");
+}
+.icon.main-icon.icon-inform {
+  background-image: url("../img/icons/inform.png");
+}
+.icon.main-icon.icon-vodoochistka {
+  background-image: url("../img/icons/vodoochistka.png");
+}
+.icon.main-icon.icon-vodootvedenie {
+  background-image: url("../img/icons/vodootvedenie.png");
+}
+.icon.main-icon.icon-vodopolzovanie {
+  background-image: url("../img/icons/vodopolzovanie.png");
+}
+.icon.main-icon.icon-zndt {
+  background-image: url("../img/icons/zndt.png");
+}
+.icon.company-icon {
+  width: 170px;
+  height: 170px;
+  background-image: url("../img/icons/eco.png");
+}
+.icon.icon-burger {
+  width: 20px;
+  text-align: -webkit-right;
+}
+.icon.tabs-icon {
+  width: 100px;
+  height: 100px;
+}
+.icon.tabs-icon.indiv {
+  background-image: url("../img/icons/eco.png");
+}
+.icon.tabs-icon.legal {
+  background-image: url("../img/icons/eco.png");
+}
+.icon.tabs-icon.snt {
+  background-image: url("../img/icons/eco.png");
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'century_gothic';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px!important;
+}
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+a {
+  color: #000 !important;
+  text-decoration: none!important;
+}
+a:hover {
+  opacity: 0.7;
+}
+img {
+  max-width: 100%;
+}
+.title {
+  font-family: 'century_gothic_bold';
+  font-style: normal;
+  font-weight: normal;
+}
+.title-1 {
+  font-size: 2.25rem;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.title-2 {
+  font-size: 1.625rem;
+  margin-bottom: 5px;
+}
+.title-3 {
+  font-size: 1.5rem;
+}
+.title-4 {
+  font-size: 1.25rem;
+}
+header {
+  font-family: century_gothic_bold;
+  flex: 0 0 auto;
+  background-color: transparent;
+}
+header hr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 2px;
+  width: 100%;
+}
+header hr + hr {
+  margin-top: 3px;
+}
+.header-menu a {
+  color: #fff !important;
+  text-decoration: none!important;
+}
+main {
+  flex: 1 0 auto;
+}
+.main-menu-wrapper {
+  transition: 0.3s right;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 40;
+  position: fixed;
+  top: 0%;
+  padding: 0 15px!important;
+  box-shadow: 0 0 20px 0 #c0bebe;
+}
+.main-menu-wrapper.active {
+  display: flex;
+}
+.main-menu-wrapper .nav-list {
+  margin-top: 80px;
+}
+.logo img {
+  width: 50px;
+}
+.nav-list {
+  list-style: none;
+}
+.nav-list li + li {
+  margin-top: 30px;
+}
+section {
+  padding: 50px 0 50px 0;
+}
+.bg-sec {
+  background-color: #dadada;
+  color: #000;
+}
+.bg-main {
+  background-color: #0e1e51;
+  color: #fff;
+}
+.main-banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  color: #fff;
+}
+.main-banner .main-title {
+  font-family: 'IRON MAN OF WAR 002 NCV Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.8rem;
+}
+.main-banner .main-logo {
+  width: 292px;
+}
+.main-banner .main-block {
+  height: 740px;
+}
+.services-list .services-list-item .icon-descr {
+  font-family: 'IRON MAN OF WAR 002 NCV Regular';
+  font-style: normal;
+  font-weight: normal;
+  color: #0e1e51;
+}
+iframe {
+  height: 320px;
+}
+.support-list .support-list-item img {
+  height: 200px;
+}
+.callback-form {
+  padding: 80px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.callback-form .form-group {
+  margin-bottom: 0px;
+}
+.callback-form .form-group + .form-group,
+.callback-form .form-group + button {
+  margin-top: 30px;
+}
+.company-photo {
+  width: 570px;
+}
+.news-list .news-list-item {
+  padding: 15px;
+  background-color: #dadada;
+  cursor: pointer;
+}
+.news-list .news-list-item img {
+  width: 360px;
+}
+.news-list .news-list-item + .news-list-item {
+  margin-top: 30px;
+}
+.news-detail-img {
+  width: 570px;
+}
+#map {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* Квадратный макет метки */
+}
+#map .square_wrapper {
+  position: absolute;
+  bottom: 27%;
+  right: 10%;
+  z-index: 1;
+  background-color: #fff;
+  padding: 40px;
+  width: 360px;
+}
+#map .square_layout {
+  position: absolute;
+  left: 10px;
+  top: 100px;
+  width: 300px;
+  height: 350px;
+  background-color: #fff;
+  color: #000;
+  padding: 30px;
+}
+.clearfix:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+.main_slider {
+  overflow: hidden;
+}
+.main_slider .main_slider-item img {
+  width: 570px;
+}
+.main_slider .main_slider-item:focus {
+  outline: none;
+}
+.main_slider .slick-track {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tabs .tab,
+.internal-tabs .tab {
+  color: #acacac !important;
+  font-size: 1.25rem;
+}
+.tabs .tab.active,
+.internal-tabs .tab.active {
+  color: #000 !important;
+  font-size: 1.5rem;
+}
+.internal-tabs .tab + .tab {
+  margin-top: 20px;
+}
+.internal-tabs .tab-data {
+  overflow: scroll;
+}
+.internal-tabs .tab-data ul li + li {
+  margin-top: 30px;
+}
+footer {
+  flex: 0 0 auto;
+  font-family: century_gothic_bold;
+}
+footer .rights-block {
+  font-family: century_gothic;
+  font-size: 0.8rem;
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
+.popup_wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.popup_content {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #fff;
+  width: 450px;
+  border-radius: 10px;
+}
+.popup_content-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+}
+.popup_content-success {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1;
+  transition: left 0.3s;
+}
+.popup_content-success.active {
+  left: 0;
+}
+.popup_content-success-title {
+  margin-bottom: 25px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  html {
+    font-size: 12px !important;
+  }
+  .container {
+    width: 85%;
+  }
+  .main-menu-wrapper {
+    right: -100%;
+  }
+  .main-menu-wrapper.active {
+    width: 100%;
+    right: 0%;
+  }
+  .main-menu-wrapper .nav-list {
+    margin-top: 90px;
+  }
+  .logo img {
+    width: 30px;
+  }
+  .main-banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% 0;
+    color: #fff;
+  }
+  .main-banner .main-title {
+    font-family: 'IRON MAN OF WAR 002 NCV Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.8rem;
+  }
+  .main-banner .main-logo {
+    width: 150px;
+  }
+  .main-banner .main-block {
+    height: 475px;
+  }
+  iframe {
+    height: 220px;
+  }
+  .support-list .support-list-item + .support-list-item {
+    margin-top: 30px;
+  }
+  .callback-form {
+    padding: 20px;
+  }
+  #map .square_wrapper {
+    bottom: 10%;
+    right: 15%;
+    padding: 20px;
+    width: 260px;
+  }
+  .internal-tabs .tab {
+    color: #acacac !important;
+    font-size: 1.3rem;
+  }
+  .internal-tabs .tab.active {
+    color: #000 !important;
+    font-size: 1.3rem;
+  }
+  .accordion {
+    transition: 0.4s;
+    font-size: 1.5rem;
+  }
+  .accordion .fa-minus {
+    display: none;
+  }
+  .accordion .fa-plus {
+    display: inline-block;
+  }
+  .accordion.active {
+    color: #0e1e51 !important;
+  }
+  .accordion.active .fa-minus {
+    display: inline-block;
+  }
+  .accordion.active .fa-plus {
+    display: none;
+  }
+  .panel {
+    display: none;
+    overflow: hidden;
+  }
+  .panel .internal-tabs .tab + .tab {
+    margin-top: unset;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  html,
+  body {
+    font-size: 14px!important;
+  }
+  section {
+    padding: 30px 0 30px 0;
+  }
+  .main-banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    color: #fff;
+  }
+  .main-banner .main-title {
+    font-family: 'IRON MAN OF WAR 002 NCV Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.8rem;
+  }
+  .main-banner .main-logo {
+    width: 150px;
+  }
+  .main-banner .main-block {
+    height: 480px;
+  }
+  .support-list .support-list-item img {
+    height: 100px;
+  }
+  .callback-form {
+    padding: 40px;
+  }
+  .main-menu-wrapper {
+    right: -50%;
+  }
+  .main-menu-wrapper.active {
+    width: 50%;
+    right: 0%;
+  }
+  .main-menu-wrapper .nav-list {
+    margin-top: 90px;
+  }
+  .main-banner {
+    height: 480px;
+  }
+  #map .square_wrapper {
+    bottom: 9%;
+    right: 3%;
+  }
+  .tabs .tab.active,
+  .internal-tabs .tab.active {
+    font-size: 1.25rem;
+  }
+  .internal-tabs .tab-data {
+    overflow: scroll;
+  }
+}

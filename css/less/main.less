@@ -1,0 +1,331 @@
+@import "colours.less";
+@import "icons.less";
+@import "../libs/fontawesome/css/fontawesome-all.css";
+
+html, body {
+  margin:0;
+  padding:0;
+  font-family: 'century_gothic';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px!important;
+}
+html{
+  height: 100%;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+a {
+  color: #000!important;
+  text-decoration: none!important;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+img {
+  max-width: 100%;
+}
+.title {
+  font-family: 'century_gothic_bold';
+  font-style: normal;
+  font-weight: normal;
+}
+.title-1 {
+  font-size: 2.25rem;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.title-2 {
+  font-size: 1.625rem;
+  margin-bottom: 5px;
+}
+.title-3 {
+  font-size: 1.5rem;
+}
+.title-4 {
+  font-size: 1.25rem;
+}
+header {
+  font-family: century_gothic_bold;
+  flex: 0 0 auto;
+  background-color: transparent;
+
+  hr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 2px;
+    width: 100%;
+  }
+  hr + hr {
+    margin-top: 3px;
+  }
+}
+.header-menu {
+  a {
+    color: @baseTextColor!important;
+    text-decoration: none!important;
+  }
+}
+main {
+  flex: 1 0 auto;
+}
+.main-menu-wrapper {
+  //width: 100%;
+  //display: none;
+  transition: 0.3s right;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 40;
+  position: fixed;
+  top: 0%;
+  //right: 0;
+  padding: 0 15px!important;
+  box-shadow: 0 0 20px 0 #c0bebe;
+
+  &.active{
+    display: flex;
+  }
+
+  .nav-list {
+    margin-top: 80px;
+  }
+}
+.logo {
+  img {
+    width: 50px;
+  }
+}
+.nav-list {
+  list-style: none;
+
+  li + li {
+    margin-top: 30px;
+  }
+}
+section {
+ padding: 50px 0 50px 0;
+}
+.bg-sec {
+  background-color: @secColor;
+  color: #000;
+}
+.bg-main {
+  background-color: @mainColor;
+  color: #fff;
+}
+.main-banner {
+  background-repeat: no-repeat;
+  //background-position: center center;
+  background-size: cover;
+  background-position: top center;
+  color: #fff;
+
+  .main-title {
+    font-family: 'IRON MAN OF WAR 002 NCV Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.8rem;
+  }
+  .main-logo {
+    width: 292px;
+  }
+  .main-block {
+    height: 740px;
+  }
+}
+.services-list {
+  .services-list-item {
+    .icon-descr {
+      font-family: 'IRON MAN OF WAR 002 NCV Regular';
+      font-style: normal;
+      font-weight: normal;
+      color: @mainColor;
+    }
+  }
+}
+iframe {
+  height: 320px;
+}
+.support-list {
+  .support-list-item {
+    img {
+      height: 200px;
+    }
+  }
+}
+
+.callback-form {
+  padding: 80px;
+  background-color: #fff;
+  border-radius: 10px;
+
+  .form-group {
+    margin-bottom: 0px;
+  }
+  .form-group + .form-group,
+  .form-group + button {
+    margin-top: 30px;
+  }
+}
+.company-photo {
+  width: 570px;
+}
+.news-list {
+  .news-list-item {
+    padding: 15px;
+    background-color: @secColor;
+    cursor: pointer;
+
+    img {
+      width: 360px;
+    }
+  }
+  .news-list-item + .news-list-item {
+    margin-top: 30px;
+  }
+}
+.news-detail-img {
+  width: 570px;
+}
+#map {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .square_wrapper {
+    position: absolute;
+    bottom: 27%;
+    right: 10%;
+    z-index: 1;
+    background-color: #fff;
+    padding: 40px;
+    width: 360px;
+  }
+
+  /* Квадратный макет метки */
+  .square_layout {
+    position: absolute;
+    left: 10px;
+    top: 100px;
+    width: 300px;
+    height: 350px;
+    background-color: #fff;
+    color: #000;
+    padding: 30px;
+  }
+}
+.clearfix {
+  &:after {
+    display:table;
+    content:" ";
+    clear:both;
+  }
+}
+.main_slider {
+  overflow: hidden;
+
+  .main_slider-item {
+    img {
+      width: 570px;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  .slick-track {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}
+.tabs, .internal-tabs {
+  .tab {
+    color: #acacac!important;
+    font-size: 1.25rem;
+
+    &.active{
+      color: #000!important;
+      font-size: 1.5rem;
+    }
+  }
+}
+.internal-tabs {
+  .tab + .tab {
+    margin-top: 20px;
+  }
+  .tab-data {
+    //height: 50vh;
+    overflow: scroll;
+    ul {
+      li + li {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+footer {
+  flex: 0 0 auto;
+  font-family: century_gothic_bold;
+
+  .rights-block {
+    font-family: century_gothic;
+    font-size: 0.8rem;
+  }
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
+.popup_wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.popup_content {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #fff;
+  width: 450px;
+  border-radius: 10px;
+}
+.popup_content-close {
+  //width: 22px;
+  //height: 22px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+}
+.popup_content-success{
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1;
+  transition: left .3s;
+}
+.popup_content-success.active{
+  left: 0;
+}
+.popup_content-success-title{
+  margin-bottom: 25px;
+}
+@import "mobile.less";
+@import "tablet.less";

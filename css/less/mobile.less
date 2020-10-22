@@ -1,0 +1,110 @@
+@media (min-width: 320px) and (max-width: 767px) {
+  html {
+    font-size: 12px !important;
+  }
+  .container {
+    width: 85%;
+  }
+  .main-menu-wrapper {
+    right: -100%;
+
+    &.active {
+      width: 100%;
+      right: 0%;
+    }
+
+    .nav-list {
+      margin-top: 90px;
+    }
+  }
+  .logo {
+    img {
+      width: 30px;
+    }
+  }
+  .main-banner {
+    background-repeat: no-repeat;
+    //background-position: center center;
+    background-size: cover;
+    background-position: 70% 0;
+    color: #fff;
+
+    .main-title {
+      font-family: 'IRON MAN OF WAR 002 NCV Regular';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 2.8rem;
+    }
+    .main-logo {
+      width: 150px;
+    }
+    .main-block {
+      height: 475px;
+    }
+  }
+  iframe {
+    height: 220px;
+  }
+  .support-list {
+    .support-list-item + .support-list-item {
+      margin-top: 30px;
+    }
+  }
+  .callback-form {
+    padding: 20px;
+  }
+  #map {
+    .square_wrapper {
+      bottom: 10%;
+      right: 15%;
+      padding: 20px;
+      width: 260px;
+    }
+  }
+  .internal-tabs {
+    .tab {
+      color: #acacac!important;
+      font-size: 1.3rem;
+
+      &.active{
+        color: #000!important;
+        font-size: 1.3rem;
+      }
+    }
+    //.tab-data {
+    //  height: unset;
+    //}
+  }
+  .accordion {
+    transition: 0.4s;
+    font-size: 1.5rem;
+
+    .fa-minus {
+      display: none;
+    }
+    .fa-plus {
+      display: inline-block;
+    }
+
+    &.active {
+      color: @mainColor!important;
+
+      .fa-minus {
+        display: inline-block;
+      }
+      .fa-plus {
+        display: none;
+      }
+    }
+  }
+  .panel {
+    display: none;
+    overflow: hidden;
+
+    .internal-tabs {
+      .tab + .tab {
+        margin-top: unset;
+      }
+    }
+  }
+}
