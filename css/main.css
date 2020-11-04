@@ -201,6 +201,10 @@ iframe {
 .company-photo {
   width: 570px;
 }
+.company-idea-block .fa-check-circle {
+  font-size: 20px;
+  color: #0e1e51;
+}
 .news-list .news-list-item {
   padding: 15px;
   background-color: #dadada;
