@@ -39,17 +39,26 @@
   text-align: -webkit-right;
 }
 .icon.tabs-icon {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 .icon.tabs-icon.indiv {
-  background-image: url("../img/icons/eco.png");
+  background-image: url("../img/icons/indiv.png");
 }
 .icon.tabs-icon.legal {
-  background-image: url("../img/icons/eco.png");
+  background-image: url("../img/icons/legal.png");
 }
 .icon.tabs-icon.snt {
-  background-image: url("../img/icons/eco.png");
+  background-image: url("../img/icons/snt.png");
+}
+.icon.tabs-icon.small {
+  background-image: url("../img/icons/vodopodgotovka-1.png");
+}
+.icon.tabs-icon.medium {
+  background-image: url("../img/icons/vodopodgotovka-2.png");
+}
+.icon.tabs-icon.large {
+  background-image: url("../img/icons/vodopodgotovka-3.png");
 }
 html,
 body {
@@ -197,9 +206,6 @@ iframe {
 .callback-form .form-group + .form-group,
 .callback-form .form-group + button {
   margin-top: 30px;
-}
-.company-photo {
-  width: 570px;
 }
 .company-idea-block .fa-check-circle {
   font-size: 20px;
