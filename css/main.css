@@ -60,6 +60,18 @@
 .icon.tabs-icon.large {
   background-image: url("../img/icons/vodopodgotovka-3.png");
 }
+.icon.tabs-icon.eco {
+  background-image: url("../img/icons/iconsCompany1.png");
+}
+.icon.tabs-icon.join {
+  background-image: url("../img/icons/iconsCompany2.png");
+}
+.icon.tabs-icon.money {
+  background-image: url("../img/icons/iconsCompany3.png");
+}
+.icon.tabs-icon.education {
+  background-image: url("../img/icons/iconsCompany4.png");
+}
 html,
 body {
   margin: 0;
