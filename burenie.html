@@ -73,10 +73,6 @@
     <section class="d-none d-md-block">
         <div class="container">
             <div class="tabs js-tabs d-flex flex-wrap justify-content-between">
-                <a href="#" class="tab d-flex flex-wrap col-4 justify-content-center" data-tab_target="#indiv">
-                    <i class="icon tabs-icon indiv mb-3"></i>
-                    <span class="title col-12 p-0 text-center">Физические лица</span>
-                </a>
                 <a href="#" class="tab d-flex flex-wrap col-4 justify-content-center" data-tab_target="#legal">
                     <i class="icon tabs-icon legal mb-3"></i>
                     <span class="title col-12 p-0 text-center">Юридические лица</span>
@@ -85,11 +81,15 @@
                     <i class="icon tabs-icon snt mb-3"></i>
                     <span class="title col-12 p-0 text-center">СНТ</span>
                 </a>
+                <a href="#" class="tab d-flex flex-wrap col-4 justify-content-center" data-tab_target="#indiv">
+                    <i class="icon tabs-icon indiv mb-3"></i>
+                    <span class="title col-12 p-0 text-center">Физические лица</span>
+                </a>
                 <div class="tab-data w-100" data-tab_content>
                     <div id="indiv" data-tab_item>
                         <div class="internal-tabs mt-5">
                             <div class="tab-data">
-                                <ul class="">
+                                <ul>
                                     <li>Бурение</li>
                                     <li>Лицензирование законодательством не предусмотрено, обязаны соблюдать ст. 19 Закона О недрах.</li>
                                     <li>Бурение скважин производится на водоносный горизонт, не являющийся источником централизованного водоснабжения.</li>
@@ -183,51 +183,6 @@
         <div class="container">
             <div class="mb-5">
                 <a href="javascript:void(0)" class="accordion d-flex flex-wrap justify-content-center w-100">
-                    <i class="icon tabs-icon indiv mb-3"></i>
-                    <span class="title col-12 p-0 text-center">Физические лица</span>
-                </a>
-                <div class="panel">
-                    <div class="internal-tabs js-tabs d-flex flex-wrap justify-content-between mt-5">
-                        <div class="col-12 p-0 d-flex flex-wrap">
-                            <a href="javascript:void(0)" class="tab col-6 p-0" data-tab_target="#mob_indiv_isWell">
-                                <span class="title">Есть скважина</span>
-                            </a>
-                            <a href="javascript:void(0)" class="tab col-6 p-0" data-tab_target="#mob_indiv_noWell">
-                                <span class="title">Нет скважины</span>
-                            </a>
-                        </div>
-                        <div class="tab-data col-12 p-0 mt-3" data-tab_content>
-                            <div id="mob_indiv_isWell" data-tab_item>
-                                <ul>
-                                    <li>Лицензия</li>
-                                    <li>Сбор документов</li>
-                                </ul>
-                            </div>
-                            <div id="mob_indiv_noWell" data-tab_item>
-                                <ul>
-                                    <li>Сбор документов для лицензирования</li>
-                                    <li>Проект ГРР</li>
-                                    <li>Экспертиза проекта ГРР в Росгеоэкспертизе</li>
-                                    <li>Бурение скважин</li>
-                                    <li>Оценка запасов подземных вод</li>
-                                    <li>Экспертиза отчета по оценке запасов подземных вод в Минэкологии Московской области (при добыче более 100 м3/сут)</li>
-                                    <li>Проект ЗСО выполняется специализированной организацией</li>
-                                    <li>Санитарно-эпидемиологические заключения Роспотребнадзора:
-                                        <ol class="">
-                                            <li>об использовании водного объекта</li>
-                                            <li class="mt-0">о соответствии проекта ЗСО</li>
-                                        </ol>
-                                    </li>
-                                    <li>Оформить землю под скважиной</li>
-                                    <li>Подготовка ежегодной, ежеквартальной отчетности</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-5">
-                <a href="javascript:void(0)" class="accordion d-flex flex-wrap justify-content-center w-100">
                     <i class="icon tabs-icon legal mb-3"></i>
                     <span class="title col-12 p-0 text-center">Юридические лица</span>
                 </a>
@@ -243,9 +198,21 @@
                         </div>
                         <div class="tab-data col-12 p-0 mt-3" data-tab_content>
                             <div id="mob_isWell" data-tab_item>
-                                <ul>
-                                    <li>Лицензия</li>
-                                    <li>Сбор документов</li>
+                                <ul> Для получения Лицензии необходимо: <br><br>
+                                    <li>Сбор документов для лицензирования</li>
+                                    <li>Разработка проекта ГРР</li>
+                                    <li>Прохождение экспертизы проекта ГРР в Росгеоэкспертизе</li>
+                                    <li>Получение Экспертизы отчета по оценке запасов подземных вод в Минэкологии Московской области (при добыче более 100 м3/сутки)</li>
+                                    <li>Разработка Проекта ЗСО (выполняется специализированной организацией)</li>
+                                    <li>Получение санитарно-эпидемиологические заключения Роспотребнадзора:
+                                        <ol class="">
+                                            <li>об использовании водного объекта</li>
+                                            <li class="mt-0">о соответствии проекта ЗСО</li>
+                                        </ol>
+                                    </li>
+                                    <li>Разработка Проект водозабора (при добыче более 100 м3/сутки)</li>
+                                    <li>Оформление земли под скважиной</li>
+                                    <li>Подготовка ежегодной, ежеквартальной отчетности</li>
                                 </ul>
                             </div>
                             <div id="mob_noWell" data-tab_item>
@@ -277,10 +244,56 @@
                     <span class="title col-12 p-0 text-center">СНТ</span>
                 </a>
                 <div class="panel">
+                    <div class="internal-tabs js-tabs d-flex flex-wrap justify-content-between mt-5">
+                        <div class="col-12 p-0 d-flex flex-wrap">
+                            <a href="javascript:void(0)" class="tab col-6 p-0" data-tab_target="#mob_snt_isWell">
+                                <span class="title">Есть скважина</span>
+                            </a>
+                            <a href="javascript:void(0)" class="tab col-6 p-0" data-tab_target="#mob_snt_noWell">
+                                <span class="title">Нет скважины</span>
+                            </a>
+                        </div>
+                        <div class="tab-data col-12 p-0 mt-3" data-tab_content>
+                            <div id="mob_snt_isWell" data-tab_item>
+                                <ul>
+                                    <li>Лицензия</li>
+                                    <li>Сбор документов</li>
+                                </ul>
+                            </div>
+                            <div id="mob_snt_noWell" data-tab_item>
+                                <ul>
+                                    <li>Сбор документов для лицензирования</li>
+                                    <li>Проект ГРР</li>
+                                    <li>Экспертиза проекта ГРР в Росгеоэкспертизе</li>
+                                    <li>Бурение скважин</li>
+                                    <li>Оценка запасов подземных вод</li>
+                                    <li>Экспертиза отчета по оценке запасов подземных вод в Минэкологии Московской области (при добыче более 100 м3/сут)</li>
+                                    <li>Проект ЗСО выполняется специализированной организацией</li>
+                                    <li>Санитарно-эпидемиологические заключения Роспотребнадзора:
+                                        <ol class="">
+                                            <li>об использовании водного объекта</li>
+                                            <li class="mt-0">о соответствии проекта ЗСО</li>
+                                        </ol>
+                                    </li>
+                                    <li>Оформить землю под скважиной</li>
+                                    <li>Подготовка ежегодной, ежеквартальной отчетности</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-5">
+                <a href="javascript:void(0)" class="accordion d-flex flex-wrap justify-content-center w-100">
+                    <i class="icon tabs-icon indiv mb-3"></i>
+                    <span class="title col-12 p-0 text-center">Физические лица</span>
+                </a>
+                <div class="panel">
                     <div class="internal-tabs col-12 p-0 mt-5">
                         <ul class="tab-data mt-3">
-                            <li>Сбор документов для лицензирования</li>
-                            <li>Проект ГРР</li>
+                            <li>Бурение</li>
+                            <li>Лицензирование законодательством не предусмотрено, обязаны соблюдать ст. 19 Закона О недрах.</li>
+                            <li>Бурение скважин производится на водоносный горизонт, не являющийся источником централизованного водоснабжения.</li>
                         </ul>
                     </div>
                 </div>

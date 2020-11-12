@@ -292,9 +292,6 @@ iframe {
 .internal-tabs .tab + .tab {
   margin-top: 20px;
 }
-.internal-tabs .tab-data {
-  overflow: scroll;
-}
 .internal-tabs .tab-data ul li + li {
   margin-top: 30px;
 }
