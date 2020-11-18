@@ -184,9 +184,9 @@ section {
   color: #fff;
 }
 .main-banner .main-title {
-  font-family: 'IRON MAN OF WAR 002 NCV Regular';
+  font-family: 'Intro Cond';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 900;
   font-size: 2.8rem;
 }
 .main-banner .main-logo {
@@ -196,9 +196,9 @@ section {
   height: 740px;
 }
 .services-list .services-list-item .icon-descr {
-  font-family: 'IRON MAN OF WAR 002 NCV Regular';
+  font-family: 'Intro Cond';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 900;
   color: #0e1e51;
 }
 iframe {
@@ -371,16 +371,7 @@ footer .rights-block {
     width: 30px;
   }
   .main-banner {
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: 70% 0;
-    color: #fff;
-  }
-  .main-banner .main-title {
-    font-family: 'IRON MAN OF WAR 002 NCV Regular';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 2.8rem;
   }
   .main-banner .main-logo {
     width: 150px;
